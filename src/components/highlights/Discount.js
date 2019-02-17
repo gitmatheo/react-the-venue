@@ -2,6 +2,7 @@ import React, { Component } from "react";
 
 import Fade from "react-reveal/Fade";
 import Slide from "react-reveal/Slide";
+import MyButton from "../utils/MyButton";
 
 class Discount extends Component {
   state = {
@@ -29,7 +30,6 @@ class Discount extends Component {
       <div className="center_wrapper">
         <div className="discount_wrapper">
           <Fade onReveal={() => this.handlePercentage()}>
-            {" "}
             <div className="discount_percentage">
               <span>{discountStart}</span>
               <span>OFF</span>
@@ -37,7 +37,6 @@ class Discount extends Component {
           </Fade>
 
           <Slide right>
-            {" "}
             <div className="discount_description ">
               <h3>Purchase tickets before 20th JUNE</h3>
               <p>
@@ -46,7 +45,12 @@ class Discount extends Component {
                 alias. Suscipit cumque alias laudantium. Et error suscipit
                 recusandae quos! Recusandae nulla ullam doloribus aut numqua
               </p>
-              <div>button</div>
+              <MyButton
+                text="Puchase tickets"
+                bck="orangered"
+                color="#fff"
+                link="http://google.com"
+              />
             </div>
           </Slide>
         </div>
