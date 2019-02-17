@@ -22,7 +22,6 @@ class Header extends Component {
   }
 
   handleScroll = () => {
-    console.log("user scrollling");
     if (window.scrollY > 0) {
       this.setState({
         headerShow: true
